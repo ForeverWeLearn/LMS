@@ -1,3 +1,16 @@
+USE [master];
+GO
+
+IF EXISTS (SELECT name FROM sys.databases WHERE name = 'LMS')
+BEGIN
+  ALTER DATABASE [LMS] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+  DROP DATABASE [LMS];
+END
+GO
+
+CREATE DATABASE [LMS] CONTAINMENT = NONE
+GO
+
 USE [LMS]
 GO
 
@@ -5,7 +18,7 @@ CREATE TABLE [Book] (
   [id] int PRIMARY KEY IDENTITY(1, 1),
   [ISBN] varchar(13) UNIQUE NOT NULL,
   [title] nvarchar(255) NOT NULL,
-  [category_id] varchar(255) NOT NULL,
+  [category_id] int NOT NULL,
   [description] nvarchar(max),
   [language] nvarchar(255) NOT NULL CHECK ([language] IN ('vi_VN', 'en_US')),
   [publisher_id] int NOT NULL
@@ -52,7 +65,7 @@ CREATE TABLE [Member] (
   [phone] varchar(15) NOT NULL,
   [name] nvarchar(255),
   [email] varchar(255),
-  [address] nvarchar,
+  [address] nvarchar(255),
   [card_number] varchar(14) NOT NULL
 )
 GO

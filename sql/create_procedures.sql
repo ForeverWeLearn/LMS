@@ -292,7 +292,6 @@ BEGIN
 
         COMMIT TRANSACTION;
         
-        -- Trả về thông tin để hiển thị trên UI
         SELECT 
             @days_overdue AS SoNgayQuaHan, 
             @fine_amount AS TienPhat;

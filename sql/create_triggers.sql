@@ -1,7 +1,7 @@
 USE [LMS]
 GO
 
--- 1. tu dong cap nhat tinh trang sach khi cho muon
+
 CREATE TRIGGER trg_AfterInsertLoan_UpdateStatus
 ON [Loan]
 AFTER INSERT
@@ -17,7 +17,8 @@ BEGIN
     PRINT 'Trigger: BookItem status updated to [Loaned].';
 END
 GO
--- 2. tu dong cap nhat tinh trang sach khi tra
+
+
 CREATE TRIGGER trg_AfterUpdateReturn_UpdateStatus
 ON [Loan]
 AFTER UPDATE
@@ -38,8 +39,8 @@ BEGIN
 END
 GO
 
--- 3. tu dong tao phieu phat khi tra qua han (gia 3.600)
-CREATE TRIGGER trg_AutoCreateFine
+
+CREATE TRIGGER trg_AfterUpdateLoan_AutoCreateFine
 ON [Loan]
 AFTER UPDATE
 AS
@@ -57,33 +58,6 @@ BEGIN
 
         IF @@ROWCOUNT > 0
             PRINT 'Trigger: Late return detected. Fine record created.';
-    END
-END
-GO
-
--- 4. kiem tra tinh trang sach truoc khi cho muon
-CREATE TRIGGER trg_CheckAvailabilityBeforeLoan
-ON [Loan]
-INSTEAD OF INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    IF EXISTS (
-        SELECT 1 
-        FROM [BookItem] bi
-        JOIN inserted i ON bi.[id] = i.[book_item_id]
-        WHERE bi.[status] <> 'Available'
-    )
-    BEGIN
-        RAISERROR('Lỗi: Sách hiện không khả dụng (Đang mượn, hỏng hoặc mất).', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-    ELSE
-    BEGIN
-        INSERT INTO [Loan] ([member_id], [book_item_id], [staff_id], [borrow_date], [due_date], [return_date])
-        SELECT [member_id], [book_item_id], [staff_id], [borrow_date], [due_date], [return_date] 
-        FROM inserted;
     END
 END
 GO
