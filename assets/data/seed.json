@@ -1,0 +1,161 @@
+{
+  "categories": [
+    "Thiếu nhi",
+    "Truyện ngắn",
+    "Văn học",
+    "Lịch sử",
+    "Triết học",
+    "Tiểu thuyết",
+    "Văn hóa"
+  ],
+  "publisher": [
+    "NXB Trẻ",
+    "NXB Chính trị Quốc gia - Sự thật",
+    "NXB Giáo dục",
+    "NXB Văn học",
+    "NXB Khoa học Xã hội"
+  ],
+  "author": [
+    "Nguyễn Nhật Ánh",
+    "Ngô Bảo Châu",
+    "Trần Đức Thảo",
+    "Lê Văn Lan",
+    "Nguyễn Khải"
+  ],
+  "books": [
+    {
+      "ISBN": "9786042088765",
+      "title": "Mắt Biếc",
+      "category_id": 6,
+      "description": "Mắt Biếc kể về câu chuyện tình yêu đơn phương của Ngạn dành cho Hà Lan từ thuở nhỏ đến khi trưởng thành.",
+      "language": "vi_VN",
+      "publisher_id": 1
+    },
+    {
+      "ISBN": "9786042088758",
+      "title": "Cho Tôi Xin Một Vé Đi Tuổi Thơ",
+      "category_id": 1,
+      "description": "Tác phẩm đưa người đọc trở về ký ức tuổi thơ hồn nhiên.",
+      "language": "vi_VN",
+      "publisher_id": 1
+    },
+    {
+      "ISBN": "9786049449490",
+      "title": "Người Cùng Thời",
+      "category_id": 7,
+      "description": "Tập hợp các bài viết, suy ngẫm về giáo dục và văn hóa.",
+      "language": "vi_VN",
+      "publisher_id": 1
+    },
+    {
+      "ISBN": "9786042088826",
+      "title": "Tổ Quốc Ăn Năn",
+      "category_id": 4,
+      "description": "Những suy tư về lịch sử và ký ức tập thể.",
+      "language": "vi_VN",
+      "publisher_id": 1
+    },
+    {
+      "ISBN": "9786049449537",
+      "title": "Tìm hiểu nguồn gốc ngôn ngữ và ý thức",
+      "category_id": 5,
+      "description": "Công trình nghiên cứu về sự hình thành ngôn ngữ.",
+      "language": "vi_VN",
+      "publisher_id": 5
+    },
+    {
+      "ISBN": "9786049449520",
+      "title": "Hiện tượng học và chủ nghĩa duy vật biện chứng",
+      "category_id": 5,
+      "description": "Bản dịch tiếng Việt của tác phẩm kinh điển.",
+      "language": "vi_VN",
+      "publisher_id": 2
+    },
+    {
+      "ISBN": "9786049449643",
+      "title": "Lịch Sử Việt Nam – Những Vấn Đề Cơ Bản",
+      "category_id": 4,
+      "description": "Tài liệu nghiên cứu về lịch sử Việt Nam.",
+      "language": "vi_VN",
+      "publisher_id": 3
+    },
+    {
+      "ISBN": "9786049449636",
+      "title": "Văn Hóa Việt Nam – Truyền Thống và Hiện Đại",
+      "category_id": 7,
+      "description": "Phân tích sự biến đổi của văn hóa Việt Nam.",
+      "language": "vi_VN",
+      "publisher_id": 5
+    },
+    {
+      "ISBN": "9786049449803",
+      "title": "Mùa Lạc",
+      "category_id": 3,
+      "description": "Tác phẩm phản ánh công cuộc xây dựng kinh tế mới.",
+      "language": "vi_VN",
+      "publisher_id": 4
+    },
+    {
+      "ISBN": "9786049449805",
+      "title": "Gặp Gỡ Cuối Năm",
+      "category_id": 6,
+      "description": "Tiểu thuyết phản ánh đời sống xã hội thời kỳ đổi mới.",
+      "language": "vi_VN",
+      "publisher_id": 4
+    }
+  ],
+  "staffs": [
+    { "name": "Nguyễn Thế Anh", "phone": "0900000001" },
+    { "name": "Châm Duy Khoát", "phone": "0900000002" },
+    { "name": "Đinh Duy Khương", "phone": "0900000003" },
+    { "name": "Hoàng Minh Nhất", "phone": "0900000004" }
+  ],
+  "member_cards": [
+    { "card_number": "000-0000-00001", "expiry": "2027-12-31" },
+    { "card_number": "000-0000-00002", "expiry": "2027-12-31" },
+    { "card_number": "000-0000-00003", "expiry": "2027-12-31" },
+    { "card_number": "000-0000-00004", "expiry": "2027-12-31" }
+  ],
+  "members": [
+    {
+      "phone": "0912345601",
+      "name": "Sơn Tùng M-TP",
+      "email": "sontung@mpt.com",
+      "address": "Saigon Trade Center, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+      "card_number": "000-0000-00001"
+    },
+    {
+      "phone": "0912345602",
+      "name": "Taylor Swift",
+      "email": "swift@gmail.com",
+      "address": "American",
+      "card_number": "000-0000-00002"
+    },
+    {
+      "phone": "0912345603",
+      "name": "Leo Messi",
+      "email": "messi@gmail.com",
+      "address": "South Florida",
+      "card_number": "000-0000-00003"
+    },
+    {
+      "phone": "0912345604",
+      "name": "MrBeast",
+      "email": "beast@vip.com",
+      "address": "Greenville, North Carolina",
+      "card_number": "000-0000-00004"
+    }
+  ],
+  "book_author": [
+    { "book_id": 1, "author_id": 1, "is_primary": 1 },
+    { "book_id": 2, "author_id": 1, "is_primary": 1 },
+    { "book_id": 3, "author_id": 2, "is_primary": 1 },
+    { "book_id": 4, "author_id": 4, "is_primary": 1 },
+    { "book_id": 5, "author_id": 3, "is_primary": 1 },
+    { "book_id": 6, "author_id": 3, "is_primary": 1 },
+    { "book_id": 7, "author_id": 4, "is_primary": 1 },
+    { "book_id": 8, "author_id": 2, "is_primary": 1 },
+    { "book_id": 9, "author_id": 5, "is_primary": 1 },
+    { "book_id": 10, "author_id": 5, "is_primary": 1 }
+  ]
+}

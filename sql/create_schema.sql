@@ -1,11 +1,3 @@
-USE [master]
-IF EXISTS (SELECT [name] FROM master.sys.databases WHERE [name] = 'LMS')
-  DROP DATABASE [LMS]
-GO
-
-CREATE DATABASE [LMS] CONTAINMENT = NONE
-GO
-
 USE [LMS]
 GO
 
@@ -21,7 +13,7 @@ CREATE TABLE [Book] (
 GO
 
 CREATE TABLE [Category] (
-  [id] varchar(255) PRIMARY KEY,
+  [id] int PRIMARY KEY IDENTITY(1, 1),
   [name] nvarchar(255) UNIQUE NOT NULL
 )
 GO
